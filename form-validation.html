@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation | AJAX | Live Server</title>
+</head>
+<style> 
+.form {
+	text-align: left;
+	margin: 15px;
+	padding-left: 100px;
+	font-size: 21px;
+}
+input, button {
+	padding: 14px;
+	margin: 15px 0;
+	border: 1px solid blue;
+	transition: all .2s linear;
+	display: block;
+	width: 50%;
+}
+input:focus {
+	box-shadow: 0 0px 18px #0209dc;
+}
+button {
+	width: auto;
+	cursor: pointer;
+	padding: 13px;
+	background: blue;
+	color: #fff;
+	font-size: 17px;
+	border-radius: 5px;
+}
+.output {
+	background: #31c231;
+	display: inline-block;
+	color: #fff;
+	margin: 0;
+	font-size: 24px;
+}
+.loginHeader {
+	text-align: left;
+	font-size: 24px;
+	padding-left: 115px;
+	margin: 50px 0;
+}
+.err {
+    background: red;
+    padding:21px 113px;
+}
+.header {
+	background: #5731c2;
+	color: #fff;
+	margin: 0;
+	font-size: 24px;
+	padding: 20px;
+	box-shadow: 0 13px 20px #080303;
+	margin-bottom: 50px;
+}
+.header h1, .header h2 {
+	margin: 15px;
+	font-style: italic;
+}
+</style>
+<body>
+    <div class="wrapper" style="text-align: center;">
+        <div class="header">
+            <h1>JavaScript Form Validation</h1>
+            <h2>Ajax with Live Server</h2>
+        </div>
+        <h3 class="output"></h3>
+        <form action="#" class="form" method="POST">
+            <!-- NAME -->
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Enter your Name" class="nameField">
+
+            <!-- EMAIL -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Enter Email" class="emailField">
+
+            <!-- PASSWORD -->
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter password" class="passwordField">
+            <label for="password">Re-enter Password:</label>
+            <input type="password" placeholder="Re-Enter password" class="passwordFieldTwo">
+
+            <!-- BUTTON -->
+            <button type="button" class="register">Register</button>
+        </form>
+        <!-- LOG IN -->
+        <h3 class="loginHeader">Already have an account ?</h3>
+        <h3 class="loginOutput output"></h3>
+        <form action="#" method="POST" class="form">
+
+            <!-- USER NAME -->
+            <label for="userName">Email</label>
+            <input type="email" name="userName" placeholder="Enter you email" class="userName">
+
+            <!-- PASSWORD -->
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter password" class="password">
+
+            <!-- BUTTON -->
+            <button type="button" class="login">Login</button>
+        </form>
+    </div>
+    <!-- SCRIPTS -->
+    <script type="module" src="form-validation.js"></script>
+</body>
+</html>
